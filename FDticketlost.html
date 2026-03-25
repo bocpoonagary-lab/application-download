@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Cases</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background: #38bdf8;
+            color: #000;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        .qr-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .qr {
+            width: 120px;
+            margin: 10px;
+        }
+
+        .back {
+            display: block;
+            margin-top: 30px;
+            text-align: center;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🦠 Disease Cases</h1>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Case 1</h3>
+        <a href="pdfs/disease1.pdf" target="_blank" class="btn">View PDF</a>
+    </div>
+
+    <div class="card">
+        <h3>Case 2</h3>
+        <a href="pdfs/disease2.pdf" target="_blank" class="btn">View PDF</a>
+    </div>
+
+    <div class="card">
+        <h3>Case 3</h3>
+        <a href="pdfs/disease3.pdf" target="_blank" class="btn">View PDF</a>
+    </div>
+
+</div>
+
+<!-- QR SECTION -->
+<div class="qr-section">
+
+    <h2>Scan Category</h2>
+    <!-- QR → category page -->
+    <img src="qr/disease_category.png" class="qr">
+
+    <h2>Scan Full Website</h2>
+    <!-- QR → main index -->
+    <img src="qr/site.png" class="qr">
+
+</div>
+
+<a href="index.html" class="back">⬅ Back to Home</a>
+
+</body>
+</html>
